@@ -32,8 +32,8 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-search.js"></script>
-        <script src="data/Pesril1_1.js"></script>
-        <script src="data/JuwukLegi_2.js"></script>
+        <script src="data/Persil2_1.js"></script>
+        <script src="data/Pateh_2.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -80,7 +80,7 @@
         });
         layer_GoogleSatellite_0;
         map.addLayer(layer_GoogleSatellite_0);
-        function pop_Pesril1_1(feature, layer) {
+        function pop_Persil2_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">DESA</th>\
@@ -133,11 +133,11 @@
             popup.setContent(updatedContent);
         }
 
-        function style_Pesril1_1_0(feature) {
+        function style_Persil2_1_0(feature) {
             switch(String(feature.properties['Keterangan'])) {
                 case 'Bidang K3':
                     return {
-                pane: 'pane_Pesril1_1',
+                pane: 'pane_Persil2_1',
                 opacity: 1,
                 color: 'rgba(0,255,254,1.0)',
                 dashArray: '',
@@ -146,13 +146,13 @@
                 weight: 4.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(230,119,236,0.0)',
+                fillColor: 'rgba(54,125,201,0.0)',
                 interactive: true,
             }
                     break;
                 case 'Bidang Kosong':
                     return {
-                pane: 'pane_Pesril1_1',
+                pane: 'pane_Persil2_1',
                 opacity: 1,
                 color: 'rgba(14,255,1,1.0)',
                 dashArray: '',
@@ -161,13 +161,13 @@
                 weight: 4.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(240,152,75,0.0)',
+                fillColor: 'rgba(219,94,215,0.0)',
                 interactive: true,
             }
                     break;
                 case 'Bidang Sertipikat':
                     return {
-                pane: 'pane_Pesril1_1',
+                pane: 'pane_Persil2_1',
                 opacity: 1,
                 color: 'rgba(255,1,230,1.0)',
                 dashArray: '',
@@ -176,63 +176,63 @@
                 weight: 4.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(95,170,232,0.0)',
+                fillColor: 'rgba(223,141,48,0.0)',
                 interactive: true,
             }
                     break;
             }
         }
-        map.createPane('pane_Pesril1_1');
-        map.getPane('pane_Pesril1_1').style.zIndex = 401;
-        map.getPane('pane_Pesril1_1').style['mix-blend-mode'] = 'normal';
-        var layer_Pesril1_1 = new L.geoJson(json_Pesril1_1, {
+        map.createPane('pane_Persil2_1');
+        map.getPane('pane_Persil2_1').style.zIndex = 401;
+        map.getPane('pane_Persil2_1').style['mix-blend-mode'] = 'normal';
+        var layer_Persil2_1 = new L.geoJson(json_Persil2_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Pesril1_1',
-            layerName: 'layer_Pesril1_1',
-            pane: 'pane_Pesril1_1',
-            onEachFeature: pop_Pesril1_1,
-            style: style_Pesril1_1_0,
+            dataVar: 'json_Persil2_1',
+            layerName: 'layer_Persil2_1',
+            pane: 'pane_Persil2_1',
+            onEachFeature: pop_Persil2_1,
+            style: style_Persil2_1_0,
         });
-        bounds_group.addLayer(layer_Pesril1_1);
-        map.addLayer(layer_Pesril1_1);
-        function pop_JuwukLegi_2(feature, layer) {
+        bounds_group.addLayer(layer_Persil2_1);
+        map.addLayer(layer_Persil2_1);
+        function pop_Pateh_2(feature, layer) {
         }
 
-        function style_JuwukLegi_2_0() {
+        function style_Pateh_2_0() {
             return {
-                pane: 'pane_JuwukLegi_2',
+                pane: 'pane_Pateh_2',
                 opacity: 1,
                 color: 'rgba(0,34,254,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 4.0, 
+                weight: 6.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(190,207,80,0.0)',
+                fillColor: 'rgba(164,113,88,0.0)',
                 interactive: true,
             }
         }
-        map.createPane('pane_JuwukLegi_2');
-        map.getPane('pane_JuwukLegi_2').style.zIndex = 402;
-        map.getPane('pane_JuwukLegi_2').style['mix-blend-mode'] = 'normal';
-        var layer_JuwukLegi_2 = new L.geoJson(json_JuwukLegi_2, {
+        map.createPane('pane_Pateh_2');
+        map.getPane('pane_Pateh_2').style.zIndex = 402;
+        map.getPane('pane_Pateh_2').style['mix-blend-mode'] = 'normal';
+        var layer_Pateh_2 = new L.geoJson(json_Pateh_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_JuwukLegi_2',
-            layerName: 'layer_JuwukLegi_2',
-            pane: 'pane_JuwukLegi_2',
-            onEachFeature: pop_JuwukLegi_2,
-            style: style_JuwukLegi_2_0,
+            dataVar: 'json_Pateh_2',
+            layerName: 'layer_Pateh_2',
+            pane: 'pane_Pateh_2',
+            onEachFeature: pop_Pateh_2,
+            style: style_Pateh_2_0,
         });
-        bounds_group.addLayer(layer_JuwukLegi_2);
-        map.addLayer(layer_JuwukLegi_2);
+        bounds_group.addLayer(layer_Pateh_2);
+        map.addLayer(layer_Pateh_2);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/JuwukLegi_2.png" /> Juwuk Legi': layer_JuwukLegi_2,'Pesril 1<br /><table><tr><td style="text-align: center;"><img src="legend/Pesril1_1_BidangK30.png" /></td><td>Bidang K3</td></tr><tr><td style="text-align: center;"><img src="legend/Pesril1_1_BidangKosong1.png" /></td><td>Bidang Kosong</td></tr><tr><td style="text-align: center;"><img src="legend/Pesril1_1_BidangSertipikat2.png" /></td><td>Bidang Sertipikat</td></tr></table>': layer_Pesril1_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Pateh_2.png" /> Pateh': layer_Pateh_2,'Persil 2<br /><table><tr><td style="text-align: center;"><img src="legend/Persil2_1_BidangK30.png" /></td><td>Bidang K3</td></tr><tr><td style="text-align: center;"><img src="legend/Persil2_1_BidangKosong1.png" /></td><td>Bidang Kosong</td></tr><tr><td style="text-align: center;"><img src="legend/Persil2_1_BidangSertipikat2.png" /></td><td>Bidang Sertipikat</td></tr></table>': layer_Persil2_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
-            layer: layer_Pesril1_1,
+            layer: layer_Persil2_1,
             initial: false,
             hideMarkerOnCollapse: true,
             propertyName: 'NIB'}));
